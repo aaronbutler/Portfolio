@@ -1,0 +1,85 @@
+@media only screen and (max-width: 440px) {
+	.logowrap {
+		order: 1;
+	}
+
+	.logo {
+		max-width: 192px;
+		width: 192px;
+		position: relative;
+		left: 100%
+	}
+
+	.pagetitle {
+		width: 100%;
+		text-align: center;
+		order: 2;
+	}
+
+	/*On small screens, the features take up full width of viewport and vertically stack*/
+	.feature {
+		width: 100%;
+		padding-top: 0.5em;
+		padding-bottom: 1em;
+		border-bottom: thin solid #BCBBBB;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	/*Acts as a container for featurelabel/link. They are on same line above picture on small screens*/
+	.featuretext {
+		max-width: 220px;
+		order: 1;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.featurelabel {
+		width: 50%;
+		text-align: center;
+		vertical-align: bottom;
+	}
+
+	.featurelink {
+		width: 50%;
+	}
+
+	/*On small screens, it takes up the full viewport width*/
+	.featureimg {
+		width: 100%;
+		order: 2;
+	}
+
+	/*On small screens, hide the URL for the portfolio feature*/
+	.alink {
+		display: none;
+	}
+
+	/*On small screens, show the paper-button instead*/
+	.blink {
+		display: block;
+		vertical-align: bottom;
+	}
+}
+
+@media only screen and (min-width: 441px) and (max-width:810px) {
+	.feature {
+		width: 100%;
+		padding-top: 0.5em;
+		padding-bottom: 1em;
+		border-bottom: thin solid #BCBBBB;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	/*On medium screens, the feature text and image go next to each other*/
+	.featuretext {
+		width: 50%;
+		order: 2;
+	}
+
+	.featureimg {
+		width: 50%;
+		order: 1;
+	}
+}

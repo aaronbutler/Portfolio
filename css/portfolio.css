@@ -1,0 +1,98 @@
+body {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	color: #61615A;
+}
+
+.grid {
+	 margin: 0 auto;
+	 max-width: 960px;
+	 width: 100%;
+}
+
+/*The row/container for the logo and title elements*/
+#pageheader {
+	text-align: right;
+    border-bottom: thick solid #BCBBBB;
+	padding-left: 5px;
+	padding-right: 5px;
+	width:100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/*Exists mainly because IE11 on win7 doesn't seem to like resizing external svg files; this lets me pad the logo without covering up part of it.
+It is also the col/box in page header that lets me keep the logo a constant size.*/
+.logowrap {
+	width:20%;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.logo {
+	text-align: left;
+	width: 192px;
+	height: 192px;
+
+}
+
+/*The other box/col in pageheader*/
+.pagetitle {
+	width: 80%;
+}
+
+/*Weird things were happening with resizing the banner, so I split it into something like row/col and it started behaving.*/
+#banner {
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.banner  {
+	max-width: 100%;
+	max-height: 300px;
+}
+
+#about {
+	width: 100%;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/*The start of the most interesting container*/
+#features {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.featurelabel {
+	width: 100%;
+}
+
+.feature {
+	width: 33%;
+	padding-left: 5px;
+	padding-bottom: 5px;
+}
+
+/*The paper-button that only shows up on small screens*/
+.blink {
+	display: none;
+}
+
+footer {
+	padding-top: 50px;
+}
