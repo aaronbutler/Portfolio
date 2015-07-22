@@ -29,6 +29,7 @@
 	/*Acts as a container for featurelabel/link. They are on same line above picture on small screens*/
 	.featuretext {
 		max-width: 220px;
+		width: 100%;
 		order: 1;
 		display: flex;
 		flex-wrap: wrap;
@@ -40,6 +41,18 @@
 		vertical-align: bottom;
 	}
 
+	/*On small screens, hide the URL for the portfolio feature*/
+	.alink {
+		display: none;
+	}
+
+	/*On small screens, show the paper-button instead*/
+	.blink {
+		display: block;
+		text-align: center;
+		margin-top: 1.2em;
+	}
+	
 	.featurelink {
 		width: 50%;
 	}
@@ -50,16 +63,6 @@
 		order: 2;
 	}
 
-	/*On small screens, hide the URL for the portfolio feature*/
-	.alink {
-		display: none;
-	}
-
-	/*On small screens, show the paper-button instead*/
-	.blink {
-		display: block;
-		vertical-align: bottom;
-	}
 }
 
 @media only screen and (min-width: 441px) and (max-width:810px) {

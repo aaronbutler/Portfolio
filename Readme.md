@@ -18,3 +18,23 @@ Also not exactly sure which polymer components are truly required, so I am leavi
 -I am ignoring the html error about article's needing headers, since in reality mine do have "headers" they just move responsively around the screen.
 
 Received code review on 7/22:
+-Used Notepad++ Edit-Blank Operations-Trim Trailing Spaces to get rid of the trailing spaces
+-Got rid of a couple of extra leading spaces
+-Added spaces where needed in css after :
+-Renamed primary file to index.html
+-Added to github
+----------
+-Got rid of all the paper-button references and component files - they served no real purpose, it was mostly good to know I could use bower and polymer
+-Changed the alink and blink references to anchors rather than divs inside anchors (OK now that paper-buttons are gone)
+-Apparently it is OK to go article-div-h3 but not OK to go article-section-h3. Who knew.
+-Changed page header to div as well.  Had gone overboard in using section instead of div.
+----------
+TODO:
+-Find appropriate places to use shorthand properties
+-Try the picture srcset workaround from http://www.smashingmagazine.com/2013/05/how-to-avoid-duplicate-downloads-in-responsive-images/
+-Look closely for weird/wrong spacing
+-Get more feedback about using #ID css selectors
+-Make sure the component files are gone from github
+-Make sure everything now passes html/css tests
+-Try to better understand padding vs. margins
+-Make sure it still works
