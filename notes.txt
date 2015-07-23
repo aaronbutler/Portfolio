@@ -1,0 +1,50 @@
+<picture>
+	<source
+	  media="(min-width: 1000px)"
+	  srcset="kookaburra_large_1x.jpg 1x, kookaburra_large_2x.jpg 2x">
+	<source
+	  media="(min-width: 500px)"
+	  srcset="kookaburra_medium_1x.jpg 1x, kookaburra_medium_2x.jpg 2x">
+	<img src="kookaburra_small.jpg"
+	  alt="kookaburra">
+</picture>
+
+<picture>
+	<source
+	  media="(min-width: 810px)"
+	  srcset="images/appify-800_lo.jpg 1x, images/appify-800_hi.jpg 2x">
+	<source
+	  media="(min-width: 441px)"
+	  srcset="images/appify-medium_lo.jpg 1x, images/appify-medium_hi.jpg 2x">
+	<source
+	  media="(max-width: 440px)"
+	  srcset="images/appify-small_lo.jpg 1x, images/appify-small_hi.jpg 2x">
+	
+	<!-- loaded by IE 8+, non-IE browsers that don’t support picture, and browsers that support picture but cannot find an appropriate source -->
+					<![if gte IE 8]>
+					<object data="images/appify-medium_lo.jpg" type="image/jpeg"></object>
+					<span class="fake-alt">Appify image</span>
+					<![endif]>
+
+				<!-- loaded by IE 6 and 7 -->
+				<!--[if lt IE 8]>
+				<img src="images/appify-medium_lo.jpg" alt="Appify image" />
+				<![endif]-->
+</picture>
+
+<picture alt="appify image">
+				<!-- loaded by browsers that support picture and that support one of the sources -->
+					<source srcset="images/appify-small_small.jpg 307w, appify-large_large.jpg 512w" type="image/jpeg" media="(min-width: 441px)" />
+					<source srcset="med.jpg 1x, med-2x.jpg 2x, big-3x.jpg" type="image/jpeg" />
+
+				<!-- loaded by IE 8+, non-IE browsers that don’t support picture, and browsers that support picture but cannot find an appropriate source -->
+					<![if gte IE 8]>
+					<object data="fallback.jpg" type="image/jpeg"></object>
+					<span class="fake-alt">fancy pants</span>
+					<![endif]>
+
+				<!-- loaded by IE 6 and 7 -->
+				<!--[if lt IE 8]>
+				<img src="fallback.jpg" alt="fancy pants" />
+				<![endif]-->
+				</picture>

@@ -7,6 +7,7 @@
 	<link href="css/portfolio.css" rel="stylesheet">
 	<link href="css/responsivo.css" rel="stylesheet">
 	<link href="http://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+
 	<title>Aaron's Portfolio</title>
 </head>
 <body class="grid">
@@ -18,20 +19,40 @@
 		</div>
 	</header>
 	<div id="banner">
-			<img  class="banner" src="images/banner-large_large.jpg" srcset="images/banner-large_large.jpg 307w, images/banner-fixed_800w.jpg 512w"
-				sizes="(max-width:440px) 100vw,(min-width:441px) 100vw" width="960" alt="web developer header picture">
+		<picture>
+			<source
+			  media="(min-width: 810px)"
+			  srcset="images/banner-800_hi.jpg 2x, images/banner-800_lo.jpg">
+			<source
+			  media="(min-width: 441px) and (max-width: 809px)"
+			  srcset="images/banner-medium_hi.jpg 2x, images/banner-medium_lo.jpg">
+			<source
+			  media="(max-width: 440px)"
+			  srcset="images/banner-small_hi.jpg 2x, images/banner-small_hi.jpg">
+			<img src="images/banner-medium_hi.jpg" width="960" alt="web developer header picture" class="banner">
+		</picture>
 	</div>
-	<section id="about">
+	<section id="about" class="about">
 		<h2>ABOUT MY PROJECTS</h2>
 		<p>I don't really have anything to say here, I just want to include a paragraph section to make sure it looks OK on a variety of devices.</p>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	</section>
-	<section id="features">
+	<section id="features" class="features">
 		<h2 class="featurelabel">Featured work</h2>
 		<article id="feature1" class="feature">
 			<div class="featureimg">
-			<img  src="images/appify-small_small.jpg" srcset="images/appify-small_small.jpg 307w, images/appify-large_large.jpg 512w"
-				sizes="(min-width:441px) 50vw,(max-width:440px) 100vw" width="200" height="200" alt="appify image">
+				<picture>
+					<source
+					  media="(min-width: 810px)"
+					  srcset="images/appify-800_hi.jpg 2x, images/appify-800_lo.jpg">
+					<source
+					  media="(min-width: 441px) and (max-width: 809px)"
+					  srcset="images/appify-medium_hi.jpg 2x, images/appify-medium_lo.jpg">
+					<source
+					  media="(max-width: 440px)"
+					  srcset="images/appify-small_hi.jpg 2x, images/appify-small_lo.jpg">
+					<img src="images/appify-medium_hi.jpg" width="200" height="200" alt="Appify image">
+				</picture>
 			</div>
 			<div class="featuretext">
 				<h3 class="featurelabel">APPIFY</h3>
@@ -41,8 +62,18 @@
 		</article>
 		<article id="feature2" class="feature">
 			<div class="featureimg">
-			<img  src="images/sunflower-small_small.jpg" srcset="images/sunflower-small_small.jpg 500w, images/sunflower-large_large.jpg 750w"
-				sizes="(max-width:440px) 100vw,(min-width:441px) 50vw" width="200" height="200" alt="sunflower image">
+				<picture>
+					<source
+					  media="(min-width: 810px)"
+					  srcset="images/sunflower-800_hi.jpg 2x, images/sunflower-800_lo.jpg">
+					<source
+					  media="(min-width: 441px) and (max-width: 809px)"
+					  srcset="images/sunflower-medium_hi.jpg 2x, images/sunflower-medium_lo.jpg">
+					<source
+					  media="(max-width: 440px)"
+					  srcset="images/sunflower-small_hi.jpg 2x, images/sunflower-small_lo.jpg">
+					<img src="images/sunflower-medium_hi.jpg" width="200" height="200" alt="Sunflower image">
+				</picture>
 			</div>
 			<div class="featuretext">
 				<h3 class="featurelabel">SUNFLOWER</h3>
@@ -52,8 +83,18 @@
 		</article>
 		<article id="feature3" class="feature">
 			<div class="featureimg">
-			<img  src="images/bokeh-small_small.jpg" srcset="images/bokeh-small_small.jpg 500w, images/bokeh-large_large.jpg 750w"
-				sizes="(max-width:440px) 100vw,(min-width:441px) 50vw" width="200" height="200" alt="bokeh image" title="sample3">
+				<picture>
+					<source
+					  media="(min-width: 810px)"
+					  srcset="images/bokeh-800_hi.jpg 2x, images/bokeh-800_lo.jpg">
+					<source
+					  media="(min-width: 441px) and (max-width: 809px)"
+					  srcset="images/bokeh-medium_hi.jpg 2x, images/bokeh-medium_lo.jpg">
+					<source
+					  media="(max-width: 440px)"
+					  srcset="images/bokeh-small_hi.jpg 2x, images/bokeh-small_lo.jpg">
+					<img src="images/bokeh-medium_hi.jpg" width="200" height="200" alt="Bokeh image">
+				</picture>
 			</div>
 			<div class="featuretext">
 				<h3 class="featurelabel">BOKEH</h3>
@@ -63,4 +104,7 @@
 		</article>
 	</section>
 	<footer>Copyright 2015</footer>
+
+	<!--Not completely sure if this script must be loaded here, but the responsive images course does it this way and it seems to work-->
+	<script src="js/picturefill.min.js"></script>
 </body>

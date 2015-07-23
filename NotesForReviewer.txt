@@ -1,0 +1,16 @@
+-I'm not really concerned about the quality of the images. My starting point was the quality that I could pull out of the pdf mockup. After that, I wanted to make sure I could use grunt and ImageMagick to create different sizes and qualities. Then I wanted to use picture elements and srcset to pick one (and only one) "appropriate" image. In real life I would start with decent quality, similar size images before I start optimizing and making them responsive. 
+PLEASE check that my picture and source elements are handled correctly.
+-I removed the paper-button polymer element, I mainly wanted to know I could do it, it was silly to leave it in the first time.
+-I added picturefill.min.js, which seemed to take care of the weird duplicate image loading that was happening before.
+-I moved my general comments to Readme.md, or notes, or this document. I'll simplify as I go forward.
+
+Corrections from first submission:
+-Lots of trailing white space
+-Lots of inappropriate spacing in css after the :
+-Fixed the single quote around the font
+-Did away with the universal selectors
+-Fixed indentation errors
+-Limited use of ID selectors in css to elements that I am confident will be unique, and which were not causing confusing problems
+-Used shorthand properties whenever I was setting more than one (ie I used padding-left when I only cared about left but used padding if I cared about 2 or more)
+-Changed html file to index.html
+-Code now passes HTML validator

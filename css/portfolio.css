@@ -20,8 +20,6 @@ body {
 #pageheader {
 	text-align: right;
     border-bottom: thick solid #BCBBBB;
-	padding-left: 5px;
-	padding-right: 5px;
 	width:100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -31,10 +29,7 @@ body {
 It is also the col/box in page header that lets me keep the logo a constant size.*/
 .logowrap {
 	width:20%;
-	/*padding-left: 5px;
-	padding-right: 5px;*/
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding: 5px 0 5px 5px;
 }
 
 .logo {
@@ -44,16 +39,14 @@ It is also the col/box in page header that lets me keep the logo a constant size
 
 }
 
-/*The other box/col in pageheader*/
+/*The other box/col in pageheader, I couldn't add any padding without going to a new row so I went with a total < 100%*/
 .pagetitle {
-	width: 80%;
+	width: 77%;
 }
 
 /*Weird things were happening with resizing the banner, so I split it into something like row/col and it started behaving.*/
 #banner {
-	padding-top: 5px;
-	padding-left: 5px;
-	padding-right: 5px;
+	padding: 5px 5px 0 5px;
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -64,34 +57,46 @@ It is also the col/box in page header that lets me keep the logo a constant size
 	max-height: 300px;
 }
 
-#about {
+.about {
 	width: 100%;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding: 5px;
 }
 
 /*The start of the most interesting container*/
-#features {
+.features {
 	width: 100%;
-	/*padding-left: 5px;*/
+	padding-left: 5px;
 	display: flex;
 	flex-wrap: wrap;
 }
+
 .featurelabel {
 	width: 100%;
 }
 
 .feature {
 	width: 33%;
-	/*padding-left: 5px;*/
-	padding-bottom: 5px;
+}
+
+.featureimg {
+	width: 100%;
+	max-width: 200px;
 }
 
 /*The paper-button that only shows up on small screens*/
 .blink {
 	display: none;
+}
+
+.fake-alt {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
 }
 
 footer {
