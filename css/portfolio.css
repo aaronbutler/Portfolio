@@ -65,7 +65,7 @@ It is also the col/box in page header that lets me keep the logo a constant size
 /*The start of the most interesting container*/
 .features {
 	width: 100%;
-	padding-left: 5px;
+	padding: 0 0 0 5px;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -100,5 +100,5 @@ It is also the col/box in page header that lets me keep the logo a constant size
 }
 
 footer {
-	padding-top: 50px;
+	padding: 50px 0 0 0;
 }

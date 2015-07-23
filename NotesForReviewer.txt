@@ -3,6 +3,7 @@ PLEASE check that my picture and source elements are handled correctly.
 -I removed the paper-button polymer element, I mainly wanted to know I could do it, it was silly to leave it in the first time.
 -I added picturefill.min.js, which seemed to take care of the weird duplicate image loading that was happening before.
 -I moved my general comments to Readme.md, or notes, or this document. I'll simplify as I go forward.
+-I'll get better with organizing my github commits as well.
 
 Corrections from first submission:
 -Lots of trailing white space
@@ -11,6 +12,6 @@ Corrections from first submission:
 -Did away with the universal selectors
 -Fixed indentation errors
 -Limited use of ID selectors in css to elements that I am confident will be unique, and which were not causing confusing problems
--Used shorthand properties whenever I was setting more than one (ie I used padding-left when I only cared about left but used padding if I cared about 2 or more)
+-Used shorthand properties for everything except font, because I wasn't sure about most of the options.
 -Changed html file to index.html
 -Code now passes HTML validator
