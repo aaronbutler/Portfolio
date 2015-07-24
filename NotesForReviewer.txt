@@ -1,3 +1,36 @@
+Corrections before third submission (resubmitted 7/24/2015):
+-made "utf-8" lowercase
+-made hex references lowercase
+-fixed weird instances of tab+space and 4spaces instead of tabs
+-changed the <picture><source entries to use tabs instead of spaces before attributes on a new line, although I had done that on purpose. To me:
+		<picture>
+			<source
+			  media="(min-width: 810px)"
+			  srcset="images/banner-800_hi.jpg 2x, images/banner-800_lo.jpg">
+			<source
+			  media="(min-width: 441px) and (max-width: 809px)"
+			  srcset="images/banner-medium_hi.jpg 2x, images/banner-medium_lo.jpg">
+			<source
+			  media="(max-width: 440px)"
+			  srcset="images/banner-small_hi.jpg 2x, images/banner-small_hi.jpg">
+			<img src="images/banner-medium_hi.jpg" width="960" alt="web developer header picture" class="banner">
+		</picture>
+		
+is more readable and more descriptive than
+		<picture>
+			<source
+				media="(min-width: 810px)"
+				srcset="images/banner-800_hi.jpg 2x, images/banner-800_lo.jpg">
+			<source
+				media="(min-width: 441px) and (max-width: 809px)"
+				srcset="images/banner-medium_hi.jpg 2x, images/banner-medium_lo.jpg">
+			<source
+				media="(max-width: 440px)"
+				srcset="images/banner-small_hi.jpg 2x, images/banner-small_hi.jpg">
+			<img src="images/banner-medium_hi.jpg" width="960" alt="web developer header picture" class="banner">
+		</picture>
+-------------------------
+Notes before second submission (submitted 7/23/2015)
 -I'm not really concerned about the quality of the images. My starting point was the quality that I could pull out of the pdf mockup. After that, I wanted to make sure I could use grunt and ImageMagick to create different sizes and qualities. Then I wanted to use picture elements and srcset to pick one (and only one) "appropriate" image. In real life I would start with decent quality, similar size images before I start optimizing and making them responsive. 
 PLEASE check that my picture and source elements are handled correctly.
 -I removed the paper-button polymer element, I mainly wanted to know I could do it, it was silly to leave it in the first time.

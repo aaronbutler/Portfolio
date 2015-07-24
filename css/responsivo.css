@@ -20,7 +20,7 @@
 	.feature {
 		width: 100%;
 		padding: 0.5em 0 1em 0;
-		border-bottom: thin solid #BCBBBB;
+		border-bottom: thin solid #bcbbbb;
 		display: flex;
 		flex-wrap: wrap;
 	}
@@ -69,7 +69,7 @@
 	.feature {
 		width: 100%;
 		padding: 0.5em 0 1em 0;
-		border-bottom: thin solid #BCBBBB;
+		border-bottom: thin solid #bcbbbb;
 		display: flex;
 		flex-wrap: wrap;
 	}

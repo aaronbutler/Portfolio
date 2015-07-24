@@ -7,19 +7,19 @@ body {
 
 body {
 	font-family: "Lato", sans-serif;
-	color: #61615A;
+	color: #61615a;
 }
 
 .grid {
-	 margin: 0 auto;
-	 max-width: 960px;
-	 width: 100%;
+	margin: 0 auto;
+	max-width: 960px;
+	width: 100%;
 }
 
 /*The row/container for the logo and title elements*/
 #pageheader {
 	text-align: right;
-    border-bottom: thick solid #BCBBBB;
+	border-bottom: thick solid #BCBBBB;
 	width:100%;
 	display: flex;
 	flex-wrap: wrap;
